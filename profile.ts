@@ -110,7 +110,6 @@ export function buildProfile(input: BirthInput): PlayerProfile {
   if (rhythm === "慢热但稳定") weights.repair += 1;
   if (rhythm === "先观望再出手") weights.repair += 1;
   if (rhythm === "容易在关键点爆发") weights.career += 1;
-  if (rhythm === "擅长长期推进") weights.craft += 0; // 仅叙事用，不改权重也行
   if (rhythm === "对环境很敏感") { weights.migration += 1; weights.repair += 1; }
 
   // 压力来源微调
