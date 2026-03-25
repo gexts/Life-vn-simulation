@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predev": "node scripts/compile-ink.cjs",
+    "predev": "node compile-ink.cjs",
     "dev": "vite",
-    "prebuild": "node scripts/compile-ink.cjs",
+    "prebuild": "node compile-ink.cjs",
     "build": "tsc -b && vite build",
     "preview": "vite preview"
   },

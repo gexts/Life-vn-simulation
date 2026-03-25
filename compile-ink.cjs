@@ -5,8 +5,8 @@ const path = require("path");
 const inkjs = require("inkjs/full");
 const { PosixFileHandler } = require("inkjs/compiler/FileHandler/PosixFileHandler");
 
-const input = path.resolve(__dirname, "..", "story.ink");
-const output = path.resolve(__dirname, "..", "public", "story.json");
+const input = path.resolve(__dirname, "story.ink");
+const output = path.resolve(__dirname, "public", "story.json");
 
 const baseDirPosix = path.dirname(input).replaceAll(path.sep, path.posix.sep) + "/";
 

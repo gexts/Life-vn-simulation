@@ -95,9 +95,9 @@ export default function App() {
     const tagSet = new Set<string>();
 
     while (story.canContinue) {
-      const line = story.Continue().trim();
+      const line = (story.Continue() ?? "").trim();
       if (line) lines.push(line);
-      for (const t of story.currentTags) tagSet.add(t);
+      for (const t of story.currentTags ?? []) tagSet.add(t);
     }
 
     applyTags([...tagSet]);
